@@ -1,7 +1,7 @@
-import CardError from "../error/CardError";
-import StateError from "../error/StateError";
-import ProductError from "../error/ProductError";
-import RefundError from "../error/RefundError";
+import StateError from "../error/StateError.js";
+import CardError from "../error/CardError.js";
+import ProductError from "../error/ProductError.js";
+import RefundError from "../error/RefundError.js";
 
 export const ORDER_STATE = {
   PAY_STARTED: "payStarted",

@@ -8,8 +8,8 @@
     "start": "node ./app/app.js",
     "test": "jest",
     "coverage": "jest --coverage",
-    "loadtest": "artillery run --output report.json ./tests/loadtest/app-test.yaml",
-    "loadreport": "artillery report ./report.json"
+    "loadtest": "artillery run --output tests/loadtest/report.json ./tests/loadtest/app-test.yaml",
+    "loadreport": "artillery report tests/loadtest/report.json"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.17.10",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongodb": "^4.5.0"
   }
 }

@@ -44,6 +44,7 @@ import Order, {
   requestRefund,
   completeRefund,
 } from "../app/classes/Order";
+import { insertOrder } from "../app/api/mongo";
 import { createProduct } from "../app/classes/Product";
 import { createCard } from "../app/classes/Card";
 import CardError from "../app/error/CardError";
@@ -277,3 +278,10 @@ describe("환불 요청 실패 테스트", () => {
     );
   });
 });
+
+// describe("test", () => {
+//   test("주문하기 ", () => {
+//     const order = createOrder("Aron", "010-1234-5678", product.name, 1);
+//     insertOrder(order);
+//   });
+// });

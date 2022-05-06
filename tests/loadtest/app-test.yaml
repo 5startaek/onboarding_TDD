@@ -18,7 +18,7 @@ config:
       name: Sustained load
 
 scenarios:
-  - name: "localhost:3000"
+  - name: "make order"
     flow:
       - get:
-          url: "/"
+          url: "/order"
