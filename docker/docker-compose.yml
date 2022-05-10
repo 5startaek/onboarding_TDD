@@ -1,0 +1,12 @@
+services:
+  server:
+    container_name: server
+    image: 497217256558.dkr.ecr.ap-northeast-1.amazonaws.com/ost_server:latest
+    expose:
+      - "3000:3000"
+
+  proxy:
+    container_name: proxy
+    image: 497217256558.dkr.ecr.ap-northeast-1.amazonaws.com/ost_proxy:latest
+    ports:
+      - "80:80"

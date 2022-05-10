@@ -1,6 +1,5 @@
 import express from "express";
 import { createOrder } from "./classes/Order.js";
-import { insertOrder } from "./api/mongo.js";
 
 export const app = express();
 export const server = app.listen(3000, () => {
