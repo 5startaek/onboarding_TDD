@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/onboarding-ost",
+          "awslogs-group": "/ecs/ost-autovpc",
           "awslogs-region": "ap-northeast-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -63,7 +63,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/onboarding-ost",
+          "awslogs-group": "/ecs/ost-autovpc",
           "awslogs-region": "ap-northeast-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -118,7 +118,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:497217256558:task-definition/onboarding-ost:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:497217256558:task-definition/ost-autovpc:1",
   "family": "onboarding-ost",
   "requiresAttributes": [
     {
