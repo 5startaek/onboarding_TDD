@@ -9,7 +9,7 @@ services:
       - ost-backend
     environment:
       - ENV=local
-      - TZ=Asia/Seoul
+      - TZ=Asia/Toyko
   proxy:
     container_name: ost-nginx
     image: ost-nginx:latest
