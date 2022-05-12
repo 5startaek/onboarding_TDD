@@ -21,7 +21,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - make push
-      - printf '[{"name":"port-nginx","imageUri":"%s"}]' $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/ost_proxy:latest > imagedefinitions.json
+      - printf '[{"name":"ost-nginx","imageUri":"%s"}]' $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/ost_nginx:latest > imagedefinitions.json
 
 artifacts:
   files:

@@ -10,6 +10,7 @@ RUN ["npm", "install"]
 COPY ["app/", "./app/"]
 
 # 도커 컨테이너에 접근할 수 있게 포트 열어주기
+#ENTRYPOINT ["node", "./app"]
 EXPOSE 3000
 
 # 앱 실행시키기
